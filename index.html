@@ -1,648 +1,140 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HMD PERFORMANCE | Optimisation moteur & E85 à Colmar</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="description" content="HMD PERFORMANCE à Colmar : Stage 1, conversion E85, diagnostics, réparation boîtier FRM3 BMW. Sur rendez-vous. 06 58 87 81 25." />
-  <meta name="theme-color" content="#07070a" />
+<title>HMD PERFORMANCE | Reprogrammation moteur Colmar</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="HMD PERFORMANCE | Colmar" />
-  <meta property="og:description" content="Stage 1 • Conversion E85 • Diagnostic • Réparation FRM3 BMW • Sur RDV" />
-  <meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- LocalBusiness JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AutoRepair",
-    "name": "HMD PERFORMANCE",
-    "telephone": "+33658878125",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "15 rue de Carlovingiens",
-      "addressLocality": "Colmar",
-      "postalCode": "68000",
-      "addressCountry": "FR"
-    },
-    "areaServed": "Colmar et alentours"
-  }
-  </script>
+<link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <div class="bg-noise"></div>
-  <div class="bg-grid"></div>
-  <div class="bg-glow"></div>
 
-  <!-- Topbar -->
-  <header class="topbar" id="top">
-    <a class="brand" href="#top" aria-label="Retour en haut">
-      <img class="brand-logo" src="assets/logo.png" alt="HMD PERFORMANCE" />
-    </a>
+<header class="topbar">
+  <img class="brand-logo" src="./assets/logo.png">
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <nav class="nav">
-      <a href="#services">Services</a>
-      <a href="#tarifs">Tarifs</a>
-      <a href="#process">Process</a>
-      <a href="#avis">Avis</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <div class="actions">
+    <a class="btn ghost" href="tel:+33658878125">📞 06 58 87 81 25</a>
+    <button class="btn primary" id="quoteBtn">DEMANDE DE DEVIS</button>
+  </div>
+</header>
 
-    <div class="top-actions">
-      <a class="chip" href="tel:+33658878125" aria-label="Appeler HMD Performance">📞 06 58 87 81 25</a>
-      <button class="btn btn-ghost" id="quoteBtn">Devis instant</button>
-      <a class="btn btn-primary" href="#contact">Prendre RDV</a>
+<section class="hero">
+  <div class="hero-content">
+    <h1>
+      Reprogrammation moteur & conversion E85<br>
+      <span>HMD PERFORMANCE — Colmar</span>
+    </h1>
 
-      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+    <p>
+      Stage 1 • Conversion E85 • Diagnostic électronique<br>
+      FAP OFF • EGR OFF • AdBlue OFF • Réparation FRM3 BMW
+    </p>
 
-  <!-- Mobile menu -->
-  <div class="mobile-drawer" id="drawer" aria-hidden="true">
-    <div class="drawer-inner">
-      <div class="drawer-head">
-        <div class="drawer-title">Menu</div>
-        <button class="drawer-close" id="drawerClose" aria-label="Fermer le menu">✕</button>
-      </div>
-      <a href="#services" class="drawer-link">Services</a>
-      <a href="#tarifs" class="drawer-link">Tarifs</a>
-      <a href="#process" class="drawer-link">Process</a>
-      <a href="#avis" class="drawer-link">Avis</a>
-      <a href="#contact" class="drawer-link">Contact</a>
-      <button class="btn btn-primary drawer-cta" id="quoteBtn2">🔥 Devis instant</button>
-      <a class="btn btn-ghost drawer-cta" href="tel:+33658878125">📞 Appeler</a>
+    <div class="hero-buttons">
+      <button class="btn primary" id="quoteHero">DEMANDE DE DEVIS</button>
+      <a class="btn ghost" href="tel:+33658878125">APPELER</a>
     </div>
   </div>
+</section>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-left">
-          <div class="badge">
-            <span class="dot"></span>
-            Sur rendez-vous • 15 rue de Carlovingiens • Colmar
-          </div>
+<section id="services" class="section">
+<h2>Nos services</h2>
 
-          <h1>
-            Un site <span class="accent">noir & rouge</span>.<br/>
-            Une conduite qui <span class="accent">change tout</span>.
-          </h1>
+<div class="cards">
 
-          <p class="lead">
-            HMD PERFORMANCE à Colmar : <strong>Stage 1</strong>, <strong>Conversion E85</strong>, <strong>Diagnostics</strong>,
-            et <strong>réparation boîtier FRM3 (BMW)</strong>. Travail propre, explications claires, et résultat qui se ressent.
-          </p>
+<div class="card">
+<h3>Stage 1</h3>
+<p>Optimisation moteur pour améliorer le couple et l’agrément de conduite.</p>
+</div>
 
-          <div class="hero-cta">
-            <button class="btn btn-primary" id="quoteHero">🔥 Devis instant</button>
-            <a class="btn btn-ghost" href="#tarifs">Voir les tarifs</a>
-            <a class="btn btn-ghost" href="tel:+33658878125">📞 Appeler</a>
-          </div>
+<div class="card">
+<h3>Conversion E85</h3>
+<p>Adaptation des réglages pour rouler au superéthanol selon compatibilité.</p>
+</div>
 
-          <div class="hero-stats">
-            <div class="stat">
-              <div class="stat-k">🔒</div>
-              <div class="stat-v">Sauvegarde d’origine</div>
-              <div class="stat-s">Toujours une base propre</div>
-            </div>
-            <div class="stat">
-              <div class="stat-k">⚡</div>
-              <div class="stat-v">Résultat “feeling”</div>
-              <div class="stat-s">Couple / reprises / souplesse</div>
-            </div>
-            <div class="stat">
-              <div class="stat-k">🧪</div>
-              <div class="stat-v">Approche sérieuse</div>
-              <div class="stat-s">Vérifs + conseils</div>
-            </div>
-          </div>
+<div class="card">
+<h3>Diagnostic électronique</h3>
+<p>Lecture défauts, analyse paramètres et conseils avant intervention.</p>
+</div>
 
-          <div class="fineprint">
-            * Les résultats varient selon le véhicule, l’état mécanique et le carburant. Prestations réalisées dans le respect de la réglementation.
-          </div>
-        </div>
+<div class="card">
+<h3>Réparation FRM3 BMW</h3>
+<p>Réparation module FRM3 : vitres, éclairage, fonctions confort.</p>
+</div>
 
-        <div class="hero-right">
-          <div class="hero-card">
-            <div class="hero-card-top">
-              <div class="pulse"></div>
-              <div class="hero-card-title">Tableau de bord • HMD PERFORMANCE</div>
-              <div class="hero-card-chip">LIVE</div>
-            </div>
+</div>
+</section>
 
-            <div class="hero-card-body">
-              <div class="meter">
-                <div class="meter-label">
-                  <span>WOW-meter</span>
-                  <span class="meter-value" id="meterValue">0%</span>
-                </div>
-                <div class="meter-bar">
-                  <div class="meter-fill" id="meterFill"></div>
-                </div>
-                <div class="meter-hint">Un indicateur visuel — le vrai résultat se ressent au volant.</div>
-              </div>
+<section id="tarifs" class="section dark">
+<h2>Prestations & tarifs</h2>
 
-              <div class="mini-grid">
-                <div class="mini">
-                  <div class="mini-k">E85</div>
-                  <div class="mini-v">économies</div>
-                </div>
-                <div class="mini">
-                  <div class="mini-k">Stage 1</div>
-                  <div class="mini-v">reprises</div>
-                </div>
-                <div class="mini">
-                  <div class="mini-k">FRM3</div>
-                  <div class="mini-v">BMW</div>
-                </div>
-                <div class="mini">
-                  <div class="mini-k">Diag</div>
-                  <div class="mini-v">rapide</div>
-                </div>
-              </div>
+<div class="pricing">
 
-              <div class="quick">
-                <div class="quick-item">
-                  <div class="quick-ic">🔥</div>
-                  <div>
-                    <div class="quick-title">Devis instant</div>
-                    <div class="quick-sub">Config simple + message pré-rempli</div>
-                  </div>
-                </div>
-                <div class="quick-item">
-                  <div class="quick-ic">📍</div>
-                  <div>
-                    <div class="quick-title">Colmar</div>
-                    <div class="quick-sub">15 rue de Carlovingiens</div>
-                  </div>
-                </div>
-              </div>
+<div class="price">
+<h3>Stage 1</h3>
+<span>300€</span>
+</div>
 
-              <div class="hero-card-actions">
-                <button class="btn btn-primary" id="quoteCard">Devis instant</button>
-                <a class="btn btn-ghost" target="_blank" rel="noreferrer"
-                   href="https://www.google.com/maps/search/?api=1&query=15%20rue%20de%20Carlovingiens%2068000%20Colmar">
-                  Itinéraire
-                </a>
-              </div>
-            </div>
-          </div>
+<div class="price">
+<h3>Conversion E85</h3>
+<span>300€</span>
+</div>
 
-          <div class="floating-tags">
-            <span class="tag">Noir • Rouge • Performance</span>
-            <span class="tag">Sur RDV</span>
-            <span class="tag">Explications claires</span>
-          </div>
-        </div>
-      </div>
-    </section>
+<div class="price">
+<h3>EGR OFF</h3>
+<span>à partir de 99€</span>
+</div>
 
-    <!-- SERVICES -->
-    <section class="section" id="services">
-      <div class="section-head">
-        <h2>Services</h2>
-        <p>Ce qui apporte vraiment du résultat, sans promesse bidon.</p>
-      </div>
+<div class="price">
+<h3>FAP OFF</h3>
+<span>à partir de 149€</span>
+</div>
 
-      <div class="cards">
-        <article class="card">
-          <div class="card-ic">⛽</div>
-          <h3>Conversion E85</h3>
-          <p>Adaptation des réglages pour rouler au superéthanol selon compatibilité, avec un comportement stable et propre.</p>
-          <ul class="list">
-            <li>Économies à la pompe</li>
-            <li>Démarrages et conduite optimisés</li>
-            <li>Conseils entretien / carburant</li>
-          </ul>
-        </article>
+<div class="price">
+<h3>AdBlue OFF</h3>
+<span>à partir de 199€</span>
+</div>
 
-        <article class="card">
-          <div class="card-ic">🚀</div>
-          <h3>Optimisation Stage 1</h3>
-          <p>Objectif : un moteur plus plein, plus réactif, plus agréable. Approche cohérente et orientée fiabilité.</p>
-          <ul class="list">
-            <li>Couple et reprises</li>
-            <li>Conduite plus “smooth”</li>
-            <li>Sauvegarde d’origine</li>
-          </ul>
-        </article>
+<div class="price">
+<h3>FRM3 BMW</h3>
+<span>99€</span>
+</div>
 
-        <article class="card">
-          <div class="card-ic">🧰</div>
-          <h3>Diagnostic & contrôle</h3>
-          <p>Lecture défauts, analyse paramètres, orientation réparation. Idéal avant une optimisation.</p>
-          <ul class="list">
-            <li>Lecture / effacement*</li>
-            <li>Analyse rapide</li>
-            <li>Recommandations</li>
-          </ul>
-          <div class="small-note">* Effacer un défaut ne répare pas la cause.</div>
-        </article>
+</div>
 
-        <article class="card">
-          <div class="card-ic">🧠</div>
-          <h3>Réparation boîtier FRM3 (BMW)</h3>
-          <p>FRM3 HS ? Vitres / éclairage / fonctions confort en panne ? Diagnostic et réparation selon cas.</p>
-          <ul class="list">
-            <li>Diag symptôme FRM</li>
-            <li>Remise en service (selon état)</li>
-            <li>Conseils prévention</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+<p class="legal">
+Prestations destinées à un usage compétition / circuit uniquement selon réglementation en vigueur.
+</p>
 
-    <!-- TARIFS -->
-    <section class="section" id="tarifs">
-      <div class="section-head">
-        <h2>Tarifs</h2>
-        <p>Clair. Simple. Et tu peux demander un devis en 15 secondes.</p>
-      </div>
+</section>
 
-      <div class="pricing">
-        <div class="price-card featured">
-          <div class="price-top">
-            <div class="price-title">Conversion E85</div>
-            <div class="price-value">300€</div>
-          </div>
-          <p class="price-desc">Selon compatibilité véhicule. Comportement stable et propre.</p>
-          <div class="price-cta">
-            <button class="btn btn-primary" id="quoteE85">🔥 Devis instant</button>
-            <a class="btn btn-ghost" href="tel:+33658878125">Appeler</a>
-          </div>
-          <div class="price-badges">
-            <span>🔒 Origine sauvegardée</span>
-            <span>⛽ Économie</span>
-          </div>
-        </div>
+<section id="contact" class="section">
+<h2>Contact</h2>
 
-        <div class="price-card">
-          <div class="price-top">
-            <div class="price-title">Stage 1</div>
-            <div class="price-value">300€</div>
-          </div>
-          <p class="price-desc">Plus de couple / reprises. Optimisation orientée fiabilité.</p>
-          <div class="price-cta">
-            <button class="btn btn-primary" id="quoteStage1">🔥 Devis instant</button>
-            <a class="btn btn-ghost" href="#process">Process</a>
-          </div>
-          <div class="price-badges">
-            <span>🚀 Reprises</span>
-            <span>🧪 Vérifs</span>
-          </div>
-        </div>
+<div class="contact-box">
+<p>📍 15 rue de Carlovingiens — 68000 Colmar</p>
+<p>📞 06 58 87 81 25</p>
 
-        <div class="price-card">
-          <div class="price-top">
-            <div class="price-title">FRM3 BMW</div>
-            <div class="price-value">sur devis</div>
-          </div>
-          <p class="price-desc">Réparation selon panne / état du boîtier. Diagnostic conseillé.</p>
-          <div class="price-cta">
-            <button class="btn btn-primary" id="quoteFRM">🔥 Devis instant</button>
-            <a class="btn btn-ghost" href="#contact">Contact</a>
-          </div>
-          <div class="price-badges">
-            <span>💡 Confort / éclairage</span>
-            <span>🧰 Diagnostic</span>
-          </div>
-        </div>
-      </div>
+<button class="btn primary" id="quoteContact">DEMANDE DE DEVIS</button>
 
-      <div class="legal">
-        Les tarifs peuvent varier selon véhicule (compatibilité, accès, état mécanique). Devis possible avant intervention.
-      </div>
-    </section>
+</div>
+</section>
 
-    <!-- PROCESS -->
-    <section class="section" id="process">
-      <div class="section-head">
-        <h2>Process</h2>
-        <p>Propre et carré : on fait bien, une seule fois.</p>
-      </div>
+<footer>
+© 2026 HMD PERFORMANCE
+</footer>
 
-      <div class="steps">
-        <div class="step">
-          <div class="step-n">01</div>
-          <div class="step-c">
-            <h3>Échange & vérifs</h3>
-            <p>Objectif, véhicule, entretien, carburant, symptômes. On part sur une base saine.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-n">02</div>
-          <div class="step-c">
-            <h3>Sauvegarde d’origine</h3>
-            <p>On sauvegarde avant toute action. C’est la sécurité numéro 1.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-n">03</div>
-          <div class="step-c">
-            <h3>Optimisation / réparation</h3>
-            <p>Réglages ou réparation selon besoin. Objectif : cohérence + résultat.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-n">04</div>
-          <div class="step-c">
-            <h3>Contrôles & conseils</h3>
-            <p>Contrôle comportement, explications, recommandations entretien & usage.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+<script src="script.js"></script>
 
-    <!-- AVIS -->
-    <section class="section" id="avis">
-      <div class="section-head">
-        <h2>Avis clients</h2>
-        <p>Remplace ces avis par tes vrais retours (Google, messages clients…).</p>
-      </div>
-
-      <div class="testimonials">
-        <figure class="quote">
-          <blockquote>“Stage 1 propre : reprise énorme, conduite beaucoup plus agréable. Explications claires.”</blockquote>
-          <figcaption>— Client • Stage 1</figcaption>
-        </figure>
-        <figure class="quote">
-          <blockquote>“E85 nickel même à froid. Je sens la différence et je fais des économies.”</blockquote>
-          <figcaption>— Client • E85</figcaption>
-        </figure>
-        <figure class="quote">
-          <blockquote>“FRM3 réparé, tout refonctionne. Très pro et réactif.”</blockquote>
-          <figcaption>— Client • FRM3 BMW</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section contact" id="contact">
-      <div class="section-head">
-        <h2>Contact & RDV</h2>
-        <p>Le plus simple : clique “Devis instant” et je reçois tout ce qu’il faut.</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Coordonnées</h3>
-          <div class="contact-row">
-            <div class="k">Téléphone</div>
-            <div class="v"><a href="tel:+33658878125">06 58 87 81 25</a></div>
-          </div>
-          <div class="contact-row">
-            <div class="k">Adresse</div>
-            <div class="v">15 rue de Carlovingiens, 68000 Colmar</div>
-          </div>
-          <div class="contact-row">
-            <div class="k">Fonctionnement</div>
-            <div class="v">Sur rendez-vous</div>
-          </div>
-
-          <div class="contact-actions">
-            <button class="btn btn-primary" id="quoteContact">🔥 Devis instant</button>
-            <a class="btn btn-ghost" href="tel:+33658878125">📞 Appeler</a>
-            <a class="btn btn-ghost" target="_blank" rel="noreferrer"
-               href="https://www.google.com/maps/search/?api=1&query=15%20rue%20de%20Carlovingiens%2068000%20Colmar">
-              📍 Itinéraire
-            </a>
-          </div>
-
-          <div class="divider"></div>
-
-          <h3>Message rapide</h3>
-          <form id="leadForm" class="form">
-            <label>
-              <span>Nom</span>
-              <input name="name" autocomplete="name" placeholder="Ton nom" required />
-            </label>
-            <label>
-              <span>Téléphone</span>
-              <input name="phone" autocomplete="tel" placeholder="06..." required />
-            </label>
-            <label>
-              <span>Véhicule</span>
-              <input name="car" placeholder="Ex: BMW E87 2009 / 118i..." required />
-            </label>
-            <label>
-              <span>Prestation</span>
-              <select name="service" required>
-                <option value="" disabled selected>Choisir</option>
-                <option>Conversion E85</option>
-                <option>Stage 1</option>
-                <option>Diagnostic</option>
-                <option>Réparation FRM3 BMW</option>
-                <option>Conseil / autre</option>
-              </select>
-            </label>
-            <label>
-              <span>Message</span>
-              <textarea name="msg" rows="4" placeholder="Ton objectif, dispo, infos utiles..." required></textarea>
-            </label>
-
-            <div class="form-actions">
-              <button class="btn btn-primary" type="submit">Envoyer (WhatsApp / SMS)</button>
-              <div class="form-note">Message pré-rempli • WhatsApp puis fallback SMS.</div>
-            </div>
-          </form>
-        </div>
-
-        <div class="contact-card alt">
-          <h3>Pourquoi HMD PERFORMANCE ?</h3>
-
-          <div class="bullets">
-            <div class="bullet"><span class="b-ic">🎯</span><div><strong>Objectif clair</strong><br/>On vise le résultat concret : souplesse, couple, reprises, économies.</div></div>
-            <div class="bullet"><span class="b-ic">🧪</span><div><strong>Approche sérieuse</strong><br/>Vérifs, sauvegarde, conseils. Pas de bricolage.</div></div>
-            <div class="bullet"><span class="b-ic">⚙️</span><div><strong>Sur mesure</strong><br/>On s’adapte au véhicule et à ton usage.</div></div>
-            <div class="bullet"><span class="b-ic">🤝</span><div><strong>Transparent</strong><br/>Je t’explique ce qui est fait et pourquoi.</div></div>
-          </div>
-
-          <div class="cta-panel">
-            <div>
-              <div class="cta-title">15 secondes pour un devis propre</div>
-              <div class="cta-sub">Véhicule + objectif + dispo → message prêt.</div>
-            </div>
-            <button class="btn btn-primary" id="quotePanel">🔥 Go</button>
-          </div>
-
-          <div class="mini-faq">
-            <h4>FAQ rapide</h4>
-            <details>
-              <summary>Combien de temps ça prend ?</summary>
-              <p>Ça dépend du véhicule et de la prestation. Sur RDV, on planifie au plus court.</p>
-            </details>
-            <details>
-              <summary>On peut revenir à l’origine ?</summary>
-              <p>Oui, car une sauvegarde d’origine est faite avant intervention.</p>
-            </details>
-            <details>
-              <summary>FRM3 BMW : c’est quoi ?</summary>
-              <p>Un module de carrosserie/confort (vitres, éclairage, fonctions). Si HS : diag et réparation selon état.</p>
-            </details>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="foot-left">
-          <a class="brand small" href="#top" aria-label="Retour en haut">
-            <img class="brand-logo small" src="assets/logo.png" alt="HMD PERFORMANCE" />
-          </a>
-          <div class="foot-meta">
-            15 rue de Carlovingiens, 68000 Colmar • <a href="tel:+33658878125">06 58 87 81 25</a> • Sur rendez-vous
-          </div>
-        </div>
-
-        <div class="foot-right">
-          <a href="mentions-legales.html">Mentions légales</a>
-          <span class="sep">•</span>
-          <a href="#top">Retour en haut ↑</a>
-        </div>
-      </div>
-      <div class="foot-bottom">
-        © <span id="year"></span> HMD PERFORMANCE. Tous droits réservés.
-      </div>
-    </footer>
-  </main>
-
-  <!-- MODAL DEVIS INSTANT -->
-  <div class="modal" id="quoteModal" aria-hidden="true">
-    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Devis instant">
-      <div class="modal-head">
-        <div>
-          <div class="modal-title">🔥 Devis instant</div>
-          <div class="modal-sub">Config rapide • Estimation “à partir de…” • WhatsApp + fallback SMS</div>
-        </div>
-        <button class="modal-close" id="quoteClose" aria-label="Fermer">✕</button>
-      </div>
-
-      <div class="modal-body">
-        <div class="quote-banner">
-          <div class="quote-price">
-            <div class="qp-label">Estimation</div>
-            <div class="qp-value" id="quotePrice">—</div>
-          </div>
-          <div class="quote-badges" id="quoteBadges">
-            <span class="qbadge">🔒 Origine sauvegardée</span>
-            <span class="qbadge">🧪 Vérifs</span>
-            <span class="qbadge">📍 Colmar</span>
-          </div>
-        </div>
-
-        <form id="quoteForm" class="form">
-          <div class="grid2">
-            <label>
-              <span>Nom</span>
-              <input name="name" autocomplete="name" placeholder="Ton nom" required />
-            </label>
-            <label>
-              <span>Téléphone</span>
-              <input name="phone" autocomplete="tel" placeholder="06..." required />
-            </label>
-          </div>
-
-          <label>
-            <span>Véhicule</span>
-            <input name="car" placeholder="Ex: BMW E87 118i 2009 / 2.0 / essence" required />
-          </label>
-
-          <div class="grid2">
-            <label>
-              <span>Prestation</span>
-              <select name="service" id="qService" required>
-                <option value="" disabled selected>Choisir</option>
-                <option value="E85">Conversion E85</option>
-                <option value="STAGE1">Stage 1</option>
-                <option value="DIAG">Diagnostic</option>
-                <option value="FRM3">Réparation FRM3 BMW</option>
-                <option value="OTHER">Conseil / autre</option>
-              </select>
-            </label>
-
-            <label>
-              <span>Objectif</span>
-              <select name="goal" id="qGoal" required>
-                <option value="" disabled selected>Choisir</option>
-                <option value="eco">Économie carburant</option>
-                <option value="torque">Plus de couple / reprises</option>
-                <option value="smooth">Conduite plus agréable</option>
-                <option value="issue">Problème / voyant</option>
-              </select>
-            </label>
-          </div>
-
-          <div class="grid2">
-            <label>
-              <span>Carburant actuel</span>
-              <select name="fuel" id="qFuel" required>
-                <option value="" disabled selected>Choisir</option>
-                <option>SP95</option>
-                <option>SP98</option>
-                <option>Diesel</option>
-                <option>E85</option>
-                <option>Mixte / autre</option>
-              </select>
-            </label>
-
-            <label>
-              <span>Boîte</span>
-              <select name="gearbox" id="qGearbox" required>
-                <option value="" disabled selected>Choisir</option>
-                <option>Manuelle</option>
-                <option>Automatique</option>
-                <option>DSG / DCT</option>
-                <option>Autre</option>
-              </select>
-            </label>
-          </div>
-
-          <div class="grid2">
-            <label>
-              <span>Kilométrage</span>
-              <input name="mileage" id="qMileage" placeholder="Ex: 145000" inputmode="numeric" required />
-            </label>
-            <label>
-              <span>Quand ?</span>
-              <select name="when" id="qWhen" required>
-                <option value="" disabled selected>Choisir</option>
-                <option>Cette semaine</option>
-                <option>Semaine prochaine</option>
-                <option>Week-end</option>
-                <option>À définir</option>
-              </select>
-            </label>
-          </div>
-
-          <label>
-            <span>Détails (modifs, symptômes, attentes)</span>
-            <textarea name="msg" id="qMsg" rows="4" placeholder="Ex: voyant, perte puissance, mods, objectif précis..." required></textarea>
-          </label>
-
-          <div class="form-actions">
-            <button class="btn btn-primary" type="submit">Envoyer la demande</button>
-            <div class="form-note">WhatsApp s’ouvre. Si ça ne marche pas : fallback SMS proposé.</div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
