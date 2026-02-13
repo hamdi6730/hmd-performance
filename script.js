@@ -1,6 +1,6 @@
 // ===== constants =====
-const COMPANY_TEL_INTL = "33658878125"; // wa.me format
-const COMPANY_TEL_SMS = "+33658878125";
+const COMPANY_TEL_INTL = "33758878125"; // wa.me format
+const COMPANY_TEL_SMS = "+33758878125";
 
 // ===== helpers =====
 function openWhatsAppOrFallbackSMS(text) {
@@ -154,3 +154,4 @@ Adresse: 15 rue de Carlovingiens, 68000 Colmar`;
   openWhatsAppOrFallbackSMS(text);
   closeQuote();
 });
+
