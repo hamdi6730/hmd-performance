@@ -4,90 +4,64 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mentions légales | HMD PERFORMANCE</title>
-  <meta name="description" content="Mentions légales - HMD PERFORMANCE, Colmar." />
   <meta name="theme-color" content="#07070a" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <div class="bg-noise"></div>
-  <div class="bg-grid"></div>
   <div class="bg-glow"></div>
 
-  <header class="topbar">
-    <a class="brand" href="index.html" aria-label="Retour au site">
-      <img class="brand-logo" src="assets/logo.png" alt="HMD PERFORMANCE" />
+  <header class="nav scrolled">
+    <a class="brand" href="index.html">
+      <img src="./assets/logo.png" class="logo" alt="HMD PERFORMANCE" />
     </a>
-    <div class="top-actions">
-      <a class="chip" href="tel:+33658878125">📞 06 58 87 81 25</a>
-      <a class="btn btn-primary" href="index.html#contact">Prendre RDV</a>
+    <div class="nav-actions">
+      <a class="pill" href="tel:+33658878125">📞 06 58 87 81 25</a>
+      <a class="btn btn-red" href="index.html#contact">Contact</a>
     </div>
   </header>
 
-  <main class="section">
-    <div class="section-head">
-      <h2>Mentions légales</h2>
-      <p>À compléter avec tes infos administratives (SIRET, statut, email).</p>
-    </div>
+  <main class="section" style="padding-top:110px;">
+    <div class="container">
+      <div class="section-head">
+        <h2>Mentions légales</h2>
+        <p>À compléter avec tes informations administratives (SIRET, statut, email).</p>
+      </div>
 
-    <div class="contact-card" style="max-width:1120px;margin:0 auto;">
-      <h3>Éditeur du site</h3>
-      <p>
-        <strong>HMD PERFORMANCE</strong><br/>
-        15 rue de Carlovingiens, 68000 Colmar<br/>
-        Tél : <a href="tel:+33658878125">06 58 87 81 25</a><br/>
-        Email : <em>à compléter</em><br/>
-        Statut juridique : <em>à compléter</em><br/>
-        SIRET : <em>à compléter</em><br/>
-        Responsable de la publication : <em>à compléter</em>
-      </p>
+      <div class="contact-card" style="margin-top:18px;">
+        <h3 style="margin:0 0 10px;">Éditeur</h3>
+        <p style="margin:0;color:rgba(245,246,251,.75);line-height:1.7;font-weight:700;">
+          <strong style="color:#fff;">HMD PERFORMANCE</strong><br/>
+          15 rue de Carlovingiens, 68000 Colmar<br/>
+          Téléphone : <a href="tel:+33658878125">06 58 87 81 25</a><br/>
+          Email : <em>à compléter</em><br/>
+          Statut : <em>à compléter</em><br/>
+          SIRET : <em>à compléter</em><br/>
+          Responsable de publication : <em>à compléter</em>
+        </p>
 
-      <div class="divider"></div>
+        <div style="height:1px;background:rgba(255,255,255,.10);margin:18px 0;"></div>
 
-      <h3>Hébergement</h3>
-      <p>
-        Site hébergé via <strong>GitHub Pages</strong> (GitHub, Inc.).<br/>
-        Informations d’hébergement : se référer à la documentation GitHub Pages.
-      </p>
+        <h3 style="margin:0 0 10px;">Hébergement</h3>
+        <p style="margin:0;color:rgba(245,246,251,.75);line-height:1.7;font-weight:700;">
+          Hébergé via GitHub Pages (GitHub, Inc.). Se référer à la documentation GitHub Pages.
+        </p>
 
-      <div class="divider"></div>
+        <div style="height:1px;background:rgba(255,255,255,.10);margin:18px 0;"></div>
 
-      <h3>Données personnelles</h3>
-      <p>
-        Le site ne stocke pas automatiquement les données saisies : les formulaires génèrent un message pré-rempli (WhatsApp/SMS).
-        Les informations transmises servent uniquement à répondre à la demande (devis, RDV, support).
-      </p>
+        <h3 style="margin:0 0 10px;">Données personnelles</h3>
+        <p style="margin:0;color:rgba(245,246,251,.75);line-height:1.7;font-weight:700;">
+          Le site ne stocke pas automatiquement les données saisies. Les formulaires génèrent un message pré-rempli (WhatsApp/SMS).
+        </p>
 
-      <div class="divider"></div>
-
-      <h3>Cookies</h3>
-      <p>
-        Aucun cookie publicitaire n’est installé par défaut. Si des outils tiers sont ajoutés (analytics, etc.), cette page devra être mise à jour.
-      </p>
-
-      <div class="divider"></div>
-
-      <h3>Responsabilité</h3>
-      <p>
-        Les résultats peuvent varier selon le véhicule, son état et les conditions d’utilisation. HMD PERFORMANCE ne saurait être tenu responsable
-        d’un usage non conforme à la réglementation.
-      </p>
-
-      <div style="margin-top:14px;">
-        <a class="btn btn-ghost" href="index.html">← Retour au site</a>
+        <div style="margin-top:18px;">
+          <a class="btn btn-ghost" href="index.html">← Retour au site</a>
+        </div>
       </div>
     </div>
   </main>
-
-  <footer class="footer">
-    <div class="foot-bottom">© <span id="year"></span> HMD PERFORMANCE</div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
