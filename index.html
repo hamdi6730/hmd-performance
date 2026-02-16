@@ -429,7 +429,26 @@
                 <span>Message</span>
                 <textarea name="msg" rows="4" placeholder="Objectif, symptômes, dispo..." required></textarea>
               </label>
+              
+              <div class="send-choice">
+                <div class="send-title">Envoyer via</div>
 
+                <label class="send-opt">
+                  <input type="radio" name="sendViaLead" value="whatsapp" checked>
+                  <span>WhatsApp</span>
+                </label>
+
+                <label class="send-opt">
+                  <input type="radio" name="sendViaLead" value="sms">
+                  <span>SMS</span>
+                </label>
+
+                <label class="send-opt">
+                  <input type="radio" name="sendViaLead" value="email">
+                  <span>Email</span>
+                </label>
+              </div>
+              
               <button class="btn btn-red w100" type="submit">Envoyer</button>
               <div class="form-help">WhatsApp s’ouvre, sinon SMS.</div>
             </form>
@@ -516,7 +535,25 @@
             <span>Détails</span>
             <textarea name="msg" rows="4" placeholder="Objectif, symptômes, modifications, dispo..." required></textarea>
           </label>
+          <div class="send-choice">
+          <div class="send-title">Envoyer via</div>
 
+            <label class="send-opt">
+              <input type="radio" name="sendVia" value="whatsapp" checked>
+              <span>WhatsApp</span>
+            </label>
+
+            <label class="send-opt">
+              <input type="radio" name="sendVia" value="sms">
+              <span>SMS</span>
+            </label>
+
+            <label class="send-opt">
+              <input type="radio" name="sendVia" value="email">
+              <span>Email</span>
+            </label>
+          </div>
+          
           <button class="btn btn-red w100" type="submit">Envoyer la demande</button>
           <div class="form-help">WhatsApp s’ouvre. Si ça ne marche pas : SMS.</div>
 
@@ -531,6 +568,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
