@@ -385,6 +385,7 @@ input:focus,select:focus,textarea:focus{
   padding: 16px;
   background: rgba(0,0,0,.7);
   overflow-y: auto;
+  padding-bottom: 30px;
 }
 .modal-head{
   display:flex;align-items:flex-start;justify-content:space-between;gap:14px;
@@ -454,4 +455,5 @@ send-choice{
 .send-opt input{
   accent-color: var(--red);
 }
+
 
