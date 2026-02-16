@@ -3,6 +3,30 @@ const COMPANY_TEL_INTL = "33758878125"; // wa.me format
 const COMPANY_TEL_SMS = "+33758878125";
 
 // ===== helpers =====
+function openWhatsApp(text) {
+  const encoded = encodeURIComponent(text);
+  const whatsapp = `https://wa.me/${COMPANY_TEL_INTL}?text=${encoded}`;
+  window.open(whatsapp, "_blank", "noopener,noreferrer");
+}
+
+function openSMS(text) {
+  const encoded = encodeURIComponent(text);
+  const sms = `sms:${COMPANY_TEL_SMS}?&body=${encoded}`;
+  window.location.href = sms;
+}
+
+function openEmail(subject, body) {
+  const s = encodeURIComponent(subject);
+  const b = encodeURIComponent(body);
+  window.location.href = `mailto:contact@hmd-performance.fr?subject=${s}&body=${b}`;
+}
+
+function sendViaChoice(via, subject, text) {
+  if (via === "sms") return openSMS(text);
+  if (via === "email") return openEmail(subject, text);
+  return openWhatsApp(text); // défaut
+}
+
 function openWhatsAppOrFallbackSMS(text) {
   const encoded = encodeURIComponent(text);
   const whatsapp = `https://wa.me/${COMPANY_TEL_INTL}?text=${encoded}`;
@@ -102,6 +126,8 @@ leadForm?.addEventListener("submit", (e) => {
   const service = String(fd.get("service") || "").trim();
   const msg = String(fd.get("msg") || "").trim();
 
+  const via = String(fd.get("sendViaLead") || "whatsapp").trim(); // whatsapp | sms | email
+
   const text =
 `Bonjour HMD PERFORMANCE,
 Je m'appelle ${name}.
@@ -113,7 +139,7 @@ Message: ${msg}
 
 Adresse: 15 rue de Carlovingiens, 68000 Colmar`;
 
-  openWhatsAppOrFallbackSMS(text);
+  sendViaChoice(via, `Message — ${service}`, text);
 });
 
 // ===== quote form =====
@@ -127,6 +153,8 @@ quoteForm?.addEventListener("submit", (e) => {
   const service = String(fd.get("service") || "").trim();
   const when = String(fd.get("when") || "").trim();
   const msg = String(fd.get("msg") || "").trim();
+
+  const via = String(fd.get("sendVia") || "whatsapp").trim(); // whatsapp | sms | email
 
   const serviceLabel =
     service === "STAGE1" ? "Stage 1 (300€)" :
@@ -151,7 +179,8 @@ Détails: ${msg}
 
 Adresse: 15 rue de Carlovingiens, 68000 Colmar`;
 
-  openWhatsAppOrFallbackSMS(text);
+  sendViaChoice(via, `Demande de devis — ${serviceLabel}`, text);
   closeQuote();
 });
+
 
