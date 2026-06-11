@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://hmd-performance.fr/sitemap.xml
